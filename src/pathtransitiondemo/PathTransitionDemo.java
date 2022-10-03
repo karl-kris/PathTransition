@@ -27,13 +27,13 @@ public class PathTransitionDemo extends Application {
         
         
         Pane root = new Pane();
-        Rectangle rectangle = new Rectangle(0, 0, 20, 40);
+        Rectangle rectangle = new Rectangle(20, 40);
         rectangle.setFill(Color.ORANGE);
         //El rectángulo se desconfigura si no especifico la posición del círculo
         Circle circle = new Circle(150, 125, 50);
-        
         circle.setFill(Color.WHITE);
         circle.setStroke(Color.BLACK);
+        
         root.getChildren().addAll(circle,rectangle);
         
         PathTransition path = new PathTransition();
